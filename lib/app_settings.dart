@@ -24,4 +24,10 @@ class AppSettings {
   static Future openAppSettings() async {
     _channel.invokeMethod('app_settings');
   }
+  
+    /// Future async method call to open app specific settings screen.
+  static Future openSettings() async {
+    _channel.invokeMethod('settings');
+  }
+  
 }
